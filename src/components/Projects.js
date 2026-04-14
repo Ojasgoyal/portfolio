@@ -35,10 +35,10 @@ export default function Projects() {
   ];
 
   return (
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-5">
       <div className="flex flex-col gap-3 items-center">
         <h2 className="">Full Stack</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {fullStack.map((project) => (
             <a
               key={project.name}
@@ -48,7 +48,7 @@ export default function Projects() {
               className="block"
             >
               <div
-                className="w-50 rounded-sm border border-neutral-200 hover:shadow-md transition"
+                className="w-full rounded-sm border border-neutral-200 hover:shadow-md transition"
                 key={project.name}
               >
                 <Image
@@ -71,7 +71,7 @@ export default function Projects() {
       </div>
       <div className="flex flex-col gap-3 items-center">
         <h2>UI Mockups</h2>
-        <div className="flex gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {uiProjects.map((project) => (
             <a
               key={project.name}
@@ -81,7 +81,7 @@ export default function Projects() {
               className="block"
             >
               <div
-                className="w-50 rounded-sm border border-neutral-200 hover:shadow-md transition"
+                className="w-full rounded-sm border border-neutral-200 hover:shadow-md transition"
                 key={project.name}
               >
                 <Image

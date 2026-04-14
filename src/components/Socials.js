@@ -14,7 +14,7 @@ export default function Socials() {
   ];
 
   return (
-    <div className="p-4 flex items-center gap-5">
+    <div className="p-4 flex flex-wrap justify-center items-center gap-5">
     <a key={linkedin.icon.title} href={linkedin.url} className="bg-blue-700 p-1.5 rounded-lg transition-all duration-100 hover:scale-110" target="_blank">
         <linkedin.icon size={24} color="#FFFFFF"/>
     </a>

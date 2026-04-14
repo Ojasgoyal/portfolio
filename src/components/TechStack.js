@@ -28,7 +28,7 @@ export default function TechStack() {
   ];
 
   return (
-    <div className="p-4 grid grid-cols-10 w-fit mx-auto gap-4">
+    <div className="p-4 grid grid-cols-5 md:grid-cols-10 w-fit mx-auto gap-4">
       {tech.map((t) => (
         <div
           key={t.slug}

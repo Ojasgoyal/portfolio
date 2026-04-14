@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Info() {
   return (
-    <div className="flex flex-col justify-center md:flex-row items-center">
+    <div className="flex flex-col items-center text-center md:items-start md:text-left">
       <Image
         src="/profile.jpeg"
         width={100}
